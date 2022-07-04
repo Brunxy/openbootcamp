@@ -1,0 +1,40 @@
+package com.open_bootcamp;
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+    // punto 1
+
+        int numero = -5;
+
+        if(numero <= 0){
+            System.out.println("El numero es negativo");
+        }else{
+            System.out.println("El numero es positivo");
+        }
+
+        // punto 2
+
+        int numeroWhile = 0;
+
+        while (numeroWhile < 3){
+            System.out.println(numeroWhile);
+            numeroWhile++;
+        }
+
+        // punto 3
+
+        do{
+            System.out.println(numeroWhile);
+            break;
+        }while(numeroWhile < 3);
+        
+        for ( int numeroFor = 0; numeroFor < 3; numeroFor++){
+            System.out.println(numeroFor);
+            
+        }
+
+
+    }
+}
