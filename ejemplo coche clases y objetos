@@ -1,0 +1,46 @@
+package com.open_bootcamp;
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Coche coche = new Coche();
+        System.out.println(coche.numeroDePuertas);
+        System.out.println(coche.velocidadMaxima);
+
+        Coche coche2 = new Coche(2, 90);
+        System.out.println(coche2.numeroDePuertas);
+        System.out.println(coche2.velocidadMaxima);
+
+    }
+}
+
+class Coche {
+    int numeroDePuertas;
+    int velocidadMaxima;
+
+    float velocidadActual;
+
+
+
+
+    public Coche(){
+        numeroDePuertas = 4;
+        velocidadMaxima = 130;
+
+        System.out.println("Estoy en el constructor sin nada");
+
+    }
+    public Coche(int puertas, int velocidad){
+        numeroDePuertas = puertas;
+        velocidadMaxima = velocidad;
+        System.out.println("Estoy en el constructor con parametros");
+
+    }
+
+
+
+    public void acelerar() { velocidadActual += 15;}
+    public void frenar() { velocidadActual -= 15; }
+}
